@@ -1,0 +1,27 @@
+//mixin
+.othercolor() {
+  background-color: blue;
+}
+.nav {
+  .othercolor();
+  .oc2();
+}
+.oc2() {
+  border-color:green;
+}
+
+//panoramic mixin
+.button() {
+  color: white;
+  padding: 1px;
+  background-color: black;
+  padding: 3%;
+  width: 40%;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+.btn {
+  .button();
+}
